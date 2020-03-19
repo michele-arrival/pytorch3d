@@ -389,7 +389,7 @@ class Transform3d:
 
 class Translate(Transform3d):
     def __init__(
-        self, x, y=None, z=None, dtype=torch.float32, device: str = "cpu"
+        self, x, y=None, z=None, dtype=torch.float32, device="cpu"
     ):
         """
         Create a new Transform3d representing 3D translations.
@@ -425,7 +425,7 @@ class Translate(Transform3d):
 
 class Scale(Transform3d):
     def __init__(
-        self, x, y=None, z=None, dtype=torch.float32, device: str = "cpu"
+        self, x, y=None, z=None, dtype=torch.float32, device="cpu"
     ):
         """
         A Transform3d representing a scaling operation, with different scale
@@ -472,7 +472,7 @@ class Rotate(Transform3d):
         self,
         R,
         dtype=torch.float32,
-        device: str = "cpu",
+        device="cpu",
         orthogonal_tol: float = 1e-5,
     ):
         """
@@ -512,7 +512,7 @@ class RotateAxisAngle(Rotate):
         axis: str = "X",
         degrees: bool = True,
         dtype=torch.float64,
-        device: str = "cpu",
+        device="cpu",
     ):
         """
         Create a new Transform3d representing 3D rotation about an axis

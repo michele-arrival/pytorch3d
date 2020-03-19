@@ -81,7 +81,7 @@ class TestVertAlign(unittest.TestCase):
 
     @staticmethod
     def init_feats(
-        batch_size: int = 10, num_channels: int = 256, device: str = "cuda"
+        batch_size: int = 10, num_channels: int = 256, device="cuda"
     ):
         H, W = [14, 28], [14, 28]
         feats = []
@@ -150,7 +150,7 @@ class TestVertAlign(unittest.TestCase):
 
     @staticmethod
     def vert_align_with_init(
-        num_meshes: int, num_verts: int, num_faces: int, device: str = "cpu"
+        num_meshes: int, num_verts: int, num_faces: int, device="cpu"
     ):
         device = torch.device(device)
         verts_list = []

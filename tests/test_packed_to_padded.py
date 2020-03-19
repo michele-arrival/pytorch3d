@@ -19,7 +19,7 @@ class TestPackedToPadded(TestCaseMixin, unittest.TestCase):
         num_meshes: int = 10,
         num_verts: int = 1000,
         num_faces: int = 3000,
-        device: str = "cpu",
+        device="cpu",
     ):
         device = torch.device(device)
         verts_list = []
@@ -246,7 +246,7 @@ class TestPackedToPadded(TestCaseMixin, unittest.TestCase):
         num_verts: int,
         num_faces: int,
         num_d: int,
-        device: str = "cpu",
+        device="cpu",
     ):
         meshes = TestPackedToPadded.init_meshes(
             num_meshes, num_verts, num_faces, device
@@ -272,7 +272,7 @@ class TestPackedToPadded(TestCaseMixin, unittest.TestCase):
         num_verts: int,
         num_faces: int,
         num_d: int,
-        device: str = "cpu",
+        device="cpu",
     ):
         meshes = TestPackedToPadded.init_meshes(
             num_meshes, num_verts, num_faces, device

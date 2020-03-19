@@ -151,7 +151,7 @@ class TensorProperties(object):
         msg = "Expected index of type int or slice; got %r"
         raise ValueError(msg % type(index))
 
-    def to(self, device: str = "cpu"):
+    def to(self, device="cpu"):
         """
         In place operation to move class properties which are tensors to a
         specified device. If self has a property "device", update this as well.
@@ -254,7 +254,7 @@ class TensorProperties(object):
 
 
 def format_tensor(
-    input, dtype=torch.float32, device: str = "cpu"
+    input, dtype=torch.float32, device="cpu"
 ) -> torch.Tensor:
     """
     Helper function for converting a scalar value to a tensor.
@@ -277,7 +277,7 @@ def format_tensor(
 
 
 def convert_to_tensors_and_broadcast(
-    *args, dtype=torch.float32, device: str = "cpu"
+    *args, dtype=torch.float32, device="cpu"
 ):
     """
     Helper function to handle parsing an arbitrary number of inputs (*args)

@@ -226,7 +226,7 @@ class TestMeshNormalConsistency(unittest.TestCase):
 
     @staticmethod
     def mesh_normal_consistency_with_ico(
-        num_meshes: int, level: int = 3, device: str = "cpu"
+        num_meshes: int, level: int = 3, device="cpu"
     ):
         device = torch.device(device)
         mesh = ico_sphere(level, device)

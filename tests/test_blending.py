@@ -333,7 +333,7 @@ class TestBlending(unittest.TestCase):
         num_meshes: int = 16,
         image_size: int = 128,
         faces_per_pixel: int = 100,
-        device: str = "cpu",
+        device="cpu",
     ):
         if torch.cuda.is_available() and "cuda:" in device:
             # If a device other than the default is used, set the device explicity.
@@ -378,7 +378,7 @@ class TestBlending(unittest.TestCase):
         num_meshes: int = 16,
         image_size: int = 128,
         faces_per_pixel: int = 100,
-        device: str = "cpu",
+        device="cpu",
     ):
         if torch.cuda.is_available() and "cuda:" in device:
             # If a device other than the default is used, set the device explicity.

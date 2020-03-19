@@ -184,7 +184,7 @@ class TestLaplacianSmoothing(unittest.TestCase):
 
     @staticmethod
     def laplacian_smoothing_with_init(
-        num_meshes: int, num_verts: int, num_faces: int, device: str = "cpu"
+        num_meshes: int, num_verts: int, num_faces: int, device="cpu"
     ):
         device = torch.device(device)
         verts_list = []

@@ -20,7 +20,7 @@ class TestSamplePoints(unittest.TestCase):
         num_meshes: int = 10,
         num_verts: int = 1000,
         num_faces: int = 3000,
-        device: str = "cpu",
+        device="cpu",
     ):
         device = torch.device(device)
         verts_list = []
@@ -323,7 +323,7 @@ class TestSamplePoints(unittest.TestCase):
         num_verts: int,
         num_faces: int,
         num_samples: int,
-        device: str = "cpu",
+        device="cpu",
     ):
         verts_list = []
         faces_list = []

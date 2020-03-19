@@ -160,7 +160,7 @@ class DirectionalLights(TensorProperties):
         diffuse_color=((0.3, 0.3, 0.3),),
         specular_color=((0.2, 0.2, 0.2),),
         direction=((0, 1, 0),),
-        device: str = "cpu",
+        device="cpu",
     ):
         """
         Args:
@@ -221,7 +221,7 @@ class PointLights(TensorProperties):
         diffuse_color=((0.3, 0.3, 0.3),),
         specular_color=((0.2, 0.2, 0.2),),
         location=((0, 1, 0),),
-        device: str = "cpu",
+        device="cpu",
     ):
         """
         Args:

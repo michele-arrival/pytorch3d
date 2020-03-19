@@ -20,7 +20,7 @@ class TestFaceAreasNormals(TestCaseMixin, unittest.TestCase):
         num_meshes: int = 10,
         num_verts: int = 1000,
         num_faces: int = 3000,
-        device: str = "cpu",
+        device="cpu",
     ):
         device = torch.device(device)
         verts_list = []
@@ -113,7 +113,7 @@ class TestFaceAreasNormals(TestCaseMixin, unittest.TestCase):
 
     @staticmethod
     def face_areas_normals_with_init(
-        num_meshes: int, num_verts: int, num_faces: int, device: str = "cpu"
+        num_meshes: int, num_verts: int, num_faces: int, device="cpu"
     ):
         meshes = TestFaceAreasNormals.init_meshes(
             num_meshes, num_verts, num_faces, device
@@ -130,7 +130,7 @@ class TestFaceAreasNormals(TestCaseMixin, unittest.TestCase):
 
     @staticmethod
     def face_areas_normals_with_init_torch(
-        num_meshes: int, num_verts: int, num_faces: int, device: str = "cpu"
+        num_meshes: int, num_verts: int, num_faces: int, device="cpu"
     ):
         meshes = TestFaceAreasNormals.init_meshes(
             num_meshes, num_verts, num_faces, device

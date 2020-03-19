@@ -20,7 +20,7 @@ class TestMeshes(TestCaseMixin, unittest.TestCase):
         max_v: int = 100,
         max_f: int = 300,
         lists_to_tensors: bool = False,
-        device: str = "cpu",
+        device="cpu",
     ):
         """
         Function to generate a Meshes object of N meshes with
@@ -74,7 +74,7 @@ class TestMeshes(TestCaseMixin, unittest.TestCase):
         return Meshes(verts=verts_list, faces=faces_list)
 
     @staticmethod
-    def init_simple_mesh(device: str = "cpu"):
+    def init_simple_mesh(device="cpu"):
         """
         Returns a Meshes data structure of simple mesh examples.
 
@@ -1089,7 +1089,7 @@ class TestMeshes(TestCaseMixin, unittest.TestCase):
         num_meshes: int = 10,
         max_v: int = 100,
         max_f: int = 300,
-        device: str = "cpu",
+        device="cpu",
     ):
         mesh = TestMeshes.init_mesh(num_meshes, max_v, max_f, device=device)
         torch.cuda.synchronize()
@@ -1105,7 +1105,7 @@ class TestMeshes(TestCaseMixin, unittest.TestCase):
         num_meshes: int = 10,
         max_v: int = 100,
         max_f: int = 300,
-        device: str = "cpu",
+        device="cpu",
     ):
         mesh = TestMeshes.init_mesh(num_meshes, max_v, max_f, device=device)
         torch.cuda.synchronize()

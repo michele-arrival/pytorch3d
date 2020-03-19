@@ -913,7 +913,7 @@ def get_world_to_view_transform(R=r, T=t) -> Transform3d:
 
 
 def camera_position_from_spherical_angles(
-    distance, elevation, azimuth, degrees: bool = True, device: str = "cpu"
+    distance, elevation, azimuth, degrees: bool = True, device="cpu"
 ) -> torch.Tensor:
     """
     Calculate the location of the camera based on the distance away from
@@ -951,7 +951,7 @@ def camera_position_from_spherical_angles(
 
 
 def look_at_rotation(
-    camera_position, at=((0, 0, 0),), up=((0, 1, 0),), device: str = "cpu"
+    camera_position, at=((0, 0, 0),), up=((0, 1, 0),), device="cpu"
 ) -> torch.Tensor:
     """
     This function takes a vector 'camera_position' which specifies the location
