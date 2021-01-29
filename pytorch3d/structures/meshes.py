@@ -1203,8 +1203,11 @@ class Meshes(object):
     def cpu(self):
         return self.to(torch.device("cpu"))
 
-    def cuda(self):
-        return self.to(torch.device("cuda"))
+    def cuda(self, device=None):
+        if not isinstance(device, torch.device) and not isinstance(device, str):
+            device = torch.device("cuda", index=device)
+
+        return self.to(device)
 
     def get_mesh_verts_faces(self, index: int):
         """
